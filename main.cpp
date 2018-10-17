@@ -17,7 +17,7 @@ public:
         }
         
         if (subset.empty() || subset.back() != A[index]) {
-        subsetsDispatcher(A, subset, index+1, res);
+            subsetsDispatcher(A, subset, index+1, res);
         }
         subset.push_back(A[index]);
         subsetsDispatcher(A, subset, index+1, res);
